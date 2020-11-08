@@ -47,18 +47,18 @@ const controlador = linea => {
 
     default:
       if( !algoritmo.a ) //Si no se ha asignado a
-        algoritmo.a = linea;
+        algoritmo.a = Number(linea);
 
       else if( !algoritmo.b ) //Si no se ha asignado b
-        algoritmo.b = linea;
+        algoritmo.b = Number(linea);
 
       else if( !algoritmo.A ) //Si no se ha asignado A
-        algoritmo.A = linea;
+        algoritmo.A = Number(linea);
 
       else if( !algoritmo.B ) //Si no se ha asignado B
-        algoritmo.B = linea;
+        algoritmo.B = Number(linea);
 
       else //Se asigna el mensaje a cifrar/descifrar
-        algoritmo.ejecutar(linea);
+        algoritmo.ejecutar(Number(linea));
   }
 };

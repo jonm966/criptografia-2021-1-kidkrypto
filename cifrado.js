@@ -1,8 +1,13 @@
 const cifrar = ( a, b, A, B, mensaje ) => {
  
  const M = calculaM( a, b );
+ console.log('M: ', M);
  const e = calculae( A, M, a);
+ console.log('e: ', e);
+ const d = calculad( B, M, b );
+ console.log('d: ', d);
  const n = calculan( e, d, M ); 
+ console.log('n: ', n);
 
  const textoCifrado = ( mensaje * e ) % n;
  
